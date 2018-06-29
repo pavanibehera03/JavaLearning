@@ -16,7 +16,7 @@ public class Task1_42 {
 		int span=0;
 		for(int i=0;i<a.length;i++)
 		{
-			for(int j=a.length-1;j==0;j--)
+			for(int j=a.length-1;j>=0;j--)
 			{
 				if(a[i]==a[j])
 				{
