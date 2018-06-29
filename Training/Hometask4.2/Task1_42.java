@@ -13,12 +13,21 @@ public class Task1_42 {
 	public static int span(int a[])
 	{
 		int count=0;
+		int span=0;
 		for(int i=0;i<a.length;i++)
 		{
-			if(a[i]==a[0]||a[i]==a[a.length-1])
+			for(int j=a.length-1;j==0;j--)
 			{
-				count++;
+				if(a[i]==a[j])
+				{
+					count=(j-i)+1;
+				}
+				if(span<count)
+				{
+					span=count;
+				}
 			}
 		}
-		return count;
+		return span;
 	}
+}
