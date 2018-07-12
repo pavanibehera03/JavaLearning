@@ -8,6 +8,7 @@ public class Bouquet {
 	public void add(Flower flower) {
 		collection.add(flower);
 	}
+	public void getvalue();
 
 	public void add(Flower flower, int quantity) {
 		for (int index = 0; index < quantity; index++) {
